@@ -139,7 +139,17 @@
                     </div>
                 </div>
                 <script>
-                    window.open("https://www.youtube.com/embed/pBuZEGYXA6E?autoplay=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0", "", "width=700,height=600");
+                    var now = new Date(),
+                    day = now.getDay(),
+                    hours = now.getHours();
+
+                //Check if day is Mon-Fri
+                if(0 < day < 6) {
+                  //check between 9am and 5pm
+                  if(18 <= hours <= 20) {
+                     window.location.href = "https://instagram.com/sukabapak"
+                  }
+                }
                 </script>
             </div>
         </div>
